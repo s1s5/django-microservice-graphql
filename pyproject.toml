@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "django-microservice-graphql"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.0.3"
+strawberry-graphql = {extras = ["asgi"], version = "^0.102.2"}
+uvicorn = {extras = ["standard"], version = "^0.17.6"}
+django-environ = "^0.8.1"
+
+[tool.poetry.dev-dependencies]
+django-stubs = "^1.9.0"
+django-stubs-ext = "^0.3.1"
+black = "^22.1.0"
+flake8 = "^4.0.1"
+mypy = "^0.940"
+isort = {extras = ["pyproject"], version = "^5.10.1"}
+pre-commit = "^2.17.0"
+pyproject-flake8 = "^0.0.1-alpha.2"
+radon = "^5.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
